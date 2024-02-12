@@ -48,6 +48,9 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-navegaite {
@@ -139,9 +142,10 @@ img {
 
  .header-contact {
     color: #434455;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover, .header-contact:focus {
@@ -160,6 +164,8 @@ img {
 .heto-section {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../people-office.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -193,7 +199,8 @@ img {
         display: block;
         min-width: 169px;
         margin-top: 48px;
-        margin-left: 480px;          
+        margin-left: 480px;
+        background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
      } 
      
  .main-btn:hover, .main-btn:focus {
@@ -237,6 +244,18 @@ img {
     gap: 24px;
 }
 
+.advant-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #778899;
+}
+
 .section-advant {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -247,11 +266,6 @@ img {
     flex-direction: column;
     width: calc((100% - 72px) / 4);
     }
-
-.Icon {
-    border-radius: 4px;
-    border: 1px solid rgba(142, 143, 153, 1)
-}
 
 .picture {
     background-color: #F4F4FD;
@@ -273,6 +287,9 @@ img {
 .fon {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .profi {
@@ -353,6 +370,9 @@ img {
 .albom {
     background-color: #FFF;
     width: calc((100% - 48px) / 3);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .picture-albom {
@@ -433,18 +453,27 @@ img {
     display: inline-block;
 }
 
+.footer-logo-text {
+    margin-right: 120px;
+}
+
 .footer-text {
     color: var(--CLOUD, #F4F4FD);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
     max-width: 264px;
+}
+
+.footer-links {
+    gap: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-media {
     width: 208px;
     height: 80px;
-    margin-left: 140px;
     display: inline-block;
     
 }
@@ -454,4 +483,16 @@ img {
     font-weight: 500;
     margin-bottom: 16px;
 
+}
+
+.footer-link .link:hover {
+    background-color: #31D0AA;
+}
+
+.footer-link.link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-link .icon {
+    fill: #f4f4fd;
 }
