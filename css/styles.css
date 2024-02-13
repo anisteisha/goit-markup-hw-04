@@ -168,7 +168,7 @@ img {
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../peopleoffice.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -342,7 +342,7 @@ img {
     background-color: #404bbf;
 }
 
-link:focus {
+.link:focus {
     background-color: #404bbf;
 }
 
